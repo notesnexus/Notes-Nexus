@@ -36,7 +36,7 @@
             background: #ffffff;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
         .signin-section {
@@ -154,21 +154,6 @@
 
         }
 
-        .stats {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .chart,
-        .categories {
-            flex: 1;
-            background: #fff;
-            color: #000;
-            border-radius: 5px;
-            padding: 1rem;
-            text-align: center;
-        }
-
         /* Header styles */
         #header {
             position: fixed;
@@ -269,7 +254,7 @@
                 <h1>Sign In</h1>
                 <p>Welcome back! Please enter your details</p>
             </div>
-            <form class="signin-form">
+            <form class="signin-form" action = "notespage.html" method="get">
                 <label for="jisu-id">JISU ID</label>
                 <input type="text" id="jisu-id" placeholder="Enter your JISU ID" required />
                 <label for="password">Password</label>
@@ -284,22 +269,14 @@
                     <a href="#">Forgot password?</a>
                 </div>
                 <!-- <button class="signin-button" >Sign in</button> <a href="notespage.html" target="_blank"></a> -->
-                <button class="signin-button" onclick="window.location.href = 'notespage.html';">
-                    Sign In
-                           </button>
+                <button class="signin-button" type="submit">
+                    
+                    Sign In</button>
             </form>
         </div>
         <div class="photo-section"><img
                 src="https://img.freepik.com/premium-vector/log-people-isometric-vector-illustration-illustration-with-sign-people-mobile-app-design_123447-4034.jpg?w=900"
                 alt="logo Image">
-            <!-- <h1>Welcome back!</h1> -->
-            <div class="stats">
-                <div class="c/hart">
-                </div>
-                <div class="categ/ories">
-
-                </div>
-            </div>
         </div>
     </div>
 </body>
